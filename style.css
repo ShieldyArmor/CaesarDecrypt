@@ -46,6 +46,10 @@ button{
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
+  transition-property: color;
+  transition-duration: 0.35s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0s;
 }
 
 .delButton{
@@ -55,4 +59,12 @@ button{
 .encryptButton{
   background-color: #4CAF50;
   font-family: 'Cutive Mono', monospace;
+}
+
+.delButton:hover{
+  background-color: #863b3b;
+}
+
+.encryptButton:hover{
+  background-color: #3b883e;
 }
