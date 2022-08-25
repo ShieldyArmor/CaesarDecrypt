@@ -12,10 +12,6 @@ p, h1, h2, h3, label {
     color: #ffffff;
 }
 
-button {
-  color: #322D31;
-}
-
 form {
   color: #322D31;
 }
@@ -44,11 +40,19 @@ input {
 }
 
 button{
-  background-color: #4CAF50;
   border: none;
   color: white;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
+}
+
+.delButton{
+  background-color: #af4c4c;
+}
+
+.encryptButton{
+  background-color: #4CAF50;
+  font-family: 'Cutive Mono', monospace;
 }
