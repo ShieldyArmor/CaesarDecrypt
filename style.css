@@ -1,0 +1,54 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: #322D31;
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p, h1, h2, h3, label {
+    color: #ffffff;
+}
+
+button {
+  color: #322D31;
+}
+
+form {
+  color: #322D31;
+}
+
+#encryptedActual{
+  font-family: 'Silkscreen', cursive;
+  color: lightgreen;
+}
+
+#TITLE{
+  font-family: 'Cutive Mono', monospace;
+}
+
+#DESCRIPTION{
+  font-family: 'Cutive Mono', monospace;
+  color: lightgreen;
+}
+
+.spaceLabel{
+  font-family: 'Cutive Mono', monospace;
+  color: lightgreen;
+}
+
+input {
+  border-style: none;
+}
+
+button{
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
