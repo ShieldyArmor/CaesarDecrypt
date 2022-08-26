@@ -20,19 +20,16 @@
 
 <body>
   <h1 id="TITLE" class="text-center font-weig">TURING MACHINE 3000</h1>
-  <div class="container text-center">
 
+  <div class="container text-center">
     <div class="typewritercontainer">
-      <div class="typed-outTypewriter"  id="DESCRIPTION">This highly intellegent machine can encrypt ceasar code that you create from scratch!
-      </div>
+      <div class="typed-outTypewriter form-label"  id="DESCRIPTION">This highly intellegent machine can encrypt ceasar code that you create from scratch!</div>
     </div>
   </div>
 
   <div class="container text-center">
-
     <div class="typewritercontainer">
-      <div class="typed-outTypewriter delay1"  id="DESCRIPTION">Fill in the requirements below and let us do the magic for you. <br>
-      </div>
+      <div class="typed-outTypewriter delay1"  id="DESCRIPTION">Fill in the requirements below and let us do the magic for you. <br></div>
     </div>
   </div>
 
@@ -40,37 +37,34 @@
 
   <div class="container text-center">
     <div class="typewritercontainer">
-      <div class="typed-outTypewriter delay2"  id="DESCRIPTION">This machine is so incredibly efficient due to the fact that we created it by improving the Turing Machine
-      </div>
+      <div class="typed-outTypewriter delay2"  id="DESCRIPTION">This machine is so incredibly efficient due to the fact that we created it by improving the Turing Machine</div>
     </div>
   </div>
 
   <div class="container text-center">
    <div class="typewritercontainer">
-    <div class="typed-outTypewriter delay3"  id="DESCRIPTION">(Thanks Alan Turing). This machine takes whatever you input as the un-crypted message and the number
-    </div>
+    <div class="typed-outTypewriter delay3"  id="DESCRIPTION">(Thanks Alan Turing). This machine takes whatever you input as the un-crypted message and the number</div>
   </div>
 </div>
 
 <div class="container text-center">
   <div class="typewritercontainer">
-   <div class="typed-outTypewriter2 delay4"  id="DESCRIPTION">input together through a few processes that use the ceasar encryption function to encrypt your message.
-   </div>
+   <div class="typed-outTypewriter2 delay4"  id="DESCRIPTION">input together through a few processes that use the ceasar encryption function to encrypt your message.</div>
  </div>
 </div>
 
-
+</div>
 
   <div class="container mt-5 text-center">
     <form class="row g-3 justify-content-center" id="myForm" onsubmit="event.preventDefault();">
       <div class="col-md-5">
         <label for="firstName" class="form-label spaceLabel">Message you want to encrypt:</label>
-        <input type="text" class="form-control border-0 rounded-0" autocomplete="false" id="choppingBlock" required>
+        <input type="text" class="form-control border-0 rounded-0" autocomplete="off" id="choppingBlock" required>
       </div>
       <button id="deletor" class="btn fa-solid fa-trash-can align-bottom ml-3 mr-3 d-inline-block mt-4 mb-1 rounded-0 delButton" onclick="clearLabel();"></button>
       <div class="col-md-5">
-        <label for="lastName" class="form-labe spaceLabel">How many spaces you want letters to shift:</label>
-        <input type="text" class="form-control border-0 rounded-0" id="numero" type="text" autocomplete="false" name="offsetNumber" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" required>
+        <label for="lastName" class="form-label spaceLabel">How many spaces you want letters to shift:</label>
+        <input type="text" class="form-control border-0 rounded-0" id="numero" type="text" autocomplete="off" name="offsetNumber" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" required>
       </div>
       </form>
 </div>
