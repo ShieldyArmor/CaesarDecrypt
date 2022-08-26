@@ -14,6 +14,9 @@ function recieveMessage() {
   //Converts the user string into lowercase and then logs the result
   let simplified = assignedVariable.toLowerCase();
   console.log(simplified);
+  if (simplified == "turing" || simplified == "alan turing"){
+    console.log("Nice :)");
+  }
 
   //Shifts the alphabet as many times as specified by the user
   for (let i = 0; i < assignedNumber; i++) {
