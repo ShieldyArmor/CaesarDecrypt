@@ -46,10 +46,13 @@ button{
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
-  transition-property: color;
-  transition-duration: 0.35s;
-  transition-timing-function: ease-in-out;
-  transition-delay: 0s;
+}
+
+.btnTransition {
+transition-property: color;
+transition-duration: 0.35s;
+transition-timing-function: ease-in-out;
+transition-delay: 0s;
 }
 
 .delButton{
