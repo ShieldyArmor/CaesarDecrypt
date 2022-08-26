@@ -1,5 +1,10 @@
+//Alphabet variable that's used for shifting the alphabet during encryption
 var alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "æ", "ø", "å"];
+
+//The <p> tag housing the encrypted text
 var encryptedField = document.getElementById("encryptedActual");
+
+
 function recieveMessage() {
   forShifting = alphabet.slice(0);
   var assignedVariable = document.getElementById("choppingBlock").value;
