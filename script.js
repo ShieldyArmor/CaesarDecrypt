@@ -1,3 +1,5 @@
+//All commented console.logs are purely for debugging purposes
+
 //Alphabet variable that's used for shifting the alphabet during encryption
 var alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "æ", "ø", "å"];
 
@@ -13,7 +15,10 @@ function recieveMessage() {
 
   //Converts the user string into lowercase and then logs the result
   let simplified = assignedVariable.toLowerCase();
-  console.log(simplified);
+  //console.log(simplified);
+  if (simplified == "turing" || simplified == "alan turing"){
+    console.log("Nice :)");
+  }
 
   //Shifts the alphabet as many times as specified by the user
   for (let i = 0; i < assignedNumber; i++) {
@@ -21,31 +26,31 @@ function recieveMessage() {
   }
   
 
-  console.log(forShifting);
+  //console.log(forShifting);
   forShifting = forShifting.toString();
-  console.log(forShifting);
+  //console.log(forShifting);
 
   forShifting = forShifting.replaceAll(',', '');
 
-  console.log(forShifting);
+  //console.log(forShifting);
 
   for (i = 0; i < simplified.length; i++) {
     var index = alphabet.indexOf(simplified[i]);
     var letter = forShifting.charAt(index);
-    console.log(letter);
+    //console.log(letter);
     output.push(letter);
-    console.log(output);
+    //console.log(output);
   }
   
   //Replaces the different occurences of commas with empty spaces
   output = output.toString();
-  console.log(output);
+  //console.log(output);
   output = output.replaceAll(',,,', ', ')
-  console.log(output);
+  //console.log(output);
   output = output.replaceAll(',,', ', ')
-  console.log(output);
+  //console.log(output);
   output = output.replaceAll(',', '')
-  console.log(output);
+  //console.log(output);
 
 //Applies and shows the encrypted text on the page
 encryptedField.innerHTML = output;
