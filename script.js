@@ -1,20 +1,26 @@
+//Alphabet variable that's used for shifting the alphabet during encryption
 var alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "æ", "ø", "å"];
+
+//The <p> tag housing the encrypted text
 var encryptedField = document.getElementById("encryptedActual");
+
+//The main function of the program, which is run when the "encrypt text" button is pressed and is responsible for the main encryption process
 function recieveMessage() {
   forShifting = alphabet.slice(0);
   var assignedVariable = document.getElementById("choppingBlock").value;
   var assignedNumber = document.getElementById("numero").value;
   var output = []
 
-
+  //Converts the user string into lowercase and then logs the result
   let simplified = assignedVariable.toLowerCase();
-  // simplified = simplified.replaceAll(" ", '_');
   console.log(simplified);
 
+  //Shifts the alphabet as many times as specified by the user
   for (let i = 0; i < assignedNumber; i++) {
     forShifting.push(forShifting.shift());
   }
   
+
   console.log(forShifting);
   forShifting = forShifting.toString();
   console.log(forShifting);
@@ -31,7 +37,7 @@ function recieveMessage() {
     console.log(output);
   }
   
-  
+  //Replaces the different occurences of commas with empty spaces
   output = output.toString();
   console.log(output);
   output = output.replaceAll(',,,', ', ')
@@ -41,12 +47,14 @@ function recieveMessage() {
   output = output.replaceAll(',', '')
   console.log(output);
 
-document.getElementById("encryptedActual").innerHTML = output;
+//Applies and shows the encrypted text on the page
+encryptedField.innerHTML = output;
   
 }
 
 
-
+//Clears the forms, update to clear encrypted text as well
 function clearLabel() {
   document.getElementById("myForm").reset();
+  encryptedField.innerHTML = "";
 };
