@@ -6,12 +6,22 @@ var alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m",
 //The <p> tag housing the encrypted text
 var encryptedField = document.getElementById("encryptedActual");
 
+var textWarning = document.querySelector(".noTextWarning");
+
 //The main function of the program, which is run when the "encrypt text" button is pressed and is responsible for the main encryption process
 function recieveMessage() {
+
   forShifting = alphabet.slice(0);
   var assignedVariable = document.getElementById("choppingBlock").value;
   var assignedNumber = document.getElementById("numero").value;
+  
+  if (assignedVariable == ""){
+    textWarning.innerText = "You need to write something!"
+    console.error("No encryption variable detected, program terminated.");
+  }
+  
   var output = []
+  //console.log(assignedVariable);
 
   //Converts the user string into lowercase and then logs the result
   let simplified = assignedVariable.toLowerCase();
@@ -62,4 +72,5 @@ encryptedField.innerHTML = output;
 function clearLabel() {
   document.getElementById("myForm").reset();
   encryptedField.innerHTML = "";
+  textWarning.innerText = ""
 };
