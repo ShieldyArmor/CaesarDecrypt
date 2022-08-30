@@ -1,4 +1,6 @@
-.typed-outTypewriter {
+@media only screen and (min-width: 1200px)  {
+
+  .typed-outTypewriter {
     overflow: hidden;
     white-space: nowrap;
     font-size: 1.0rem;
@@ -8,23 +10,23 @@
     
   }
   
-
+  
   .delay1{
     animation-delay: 1.1s;
   }
-
+  
   .delay2{
     animation-delay: 2.2s;
   }
-
+  
   .delay3{
     animation-delay: 3.3s;
   }
-
+  
   .delay4{
     animation-delay: 4.4s;
   }
-
+  
   .typewritercontainer {
     display: inline-block;
   }
@@ -39,3 +41,6 @@
     to { border-color: white; }
   }
   
+    
+
+}
