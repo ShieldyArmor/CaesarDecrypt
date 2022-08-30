@@ -71,3 +71,9 @@ transition-delay: 0s;
 .encryptButton:hover{
   background-color: #3b883e;
 }
+
+/*Styles for the missing content warnings*/
+.missingWarning {
+  font-size: 1.0rem;
+  font-family: 'Cutive Mono', monospace;
+}
