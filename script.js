@@ -16,8 +16,11 @@ function recieveMessage() {
   var assignedNumber = document.getElementById("numero").value;
   
   if (assignedVariable == ""){
-    textWarning.innerText = "You need to write something!"
+    textWarning.innerText = "You need to write something!";
     console.error("No encryption variable detected, program terminated.");
+  }
+  else{
+    textWarning.innerText = "";
   }
   
   var output = []
