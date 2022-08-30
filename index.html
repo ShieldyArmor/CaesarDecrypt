@@ -6,21 +6,26 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>ENCRYPTOR 3000</title>
+  <link rel="icon" type="image/png" href="favicon.ico"/>
+
   <link href="typewriter.css" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link href="style.css" rel="stylesheet" type="text/css" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
-  <link rel="shortcut icon" href="#">
+
 </head>
 
 <body>
+
   <h1 id="TITLE" class="text-center font-weig">ENCRYPTOR 3000</h1>
-  <div class="container text-center">
+
+<div class="container text-center">
 
   <div class="container text-center">
     <div class="typewritercontainer">
@@ -43,18 +48,19 @@
   </div>
 
   <div class="container text-center">
-   <div class="typewritercontainer">
-    <div class="typed-outTypewriter delay3"  id="DESCRIPTION">(Thanks Alan Turing). This machine takes whatever you input as the un-crypted message and the number</div>
+    <div class="typewritercontainer">
+      <div class="typed-outTypewriter delay3"  id="DESCRIPTION">(Thanks Alan Turing). This machine takes whatever you input as the un-crypted message and the number</div>
+    </div>
   </div>
+
+  <div class="container text-center">
+    <div class="typewritercontainer">
+      <div class="typed-outTypewriter delay4"  id="DESCRIPTION">input together through a few processes that use the ceasar encryption function to encrypt your message.</div>
+    </div>
+  </div>
+
 </div>
 
-<div class="container text-center">
-  <div class="typewritercontainer">
-   <div class="typed-outTypewriter delay4"  id="DESCRIPTION">input together through a few processes that use the ceasar encryption function to encrypt your message.</div>
- </div>
-</div>
-
-</div>
 
   <div class="container mt-5 text-center">
     <form class="row g-3 justify-content-center" id="myForm" onsubmit="event.preventDefault();">
@@ -68,20 +74,42 @@
         <input type="text" class="form-control border-0 rounded-0" id="numero" type="text" autocomplete="off" name="offsetNumber" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');">
       </div>
       </form>
+
+<div class="container mt-5 text-center">
+  <form class="row g-3 justify-content-center" id="myForm" onsubmit="event.preventDefault();">
+
+    <div class="col-md-5">
+      <label for="firstName" class="form-label spaceLabel">Message you want to encrypt:</label>
+      <input type="text" class="form-control border-0 rounded-0" autocomplete="off" id="choppingBlock" required>
+    </div>
+
+    <button id="deletor" class="btn fa-solid fa-trash-can align-bottom ml-3 mr-3 d-inline-block mt-4 mb-1 rounded-0 delButton" onclick="clearLabel();"></button>
+
+    <div class="col-md-5 w-100">
+      <label for="lastName" class="form-label spaceLabel">Spaces you want letters to shift:</label>
+      <input type="text" class="form-control border-0 rounded-0" id="numero" type="text" autocomplete="off" name="offsetNumber" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" required>
+    </div>
+
+  </form>
+
 </div>
 
 <div class="container mt-5 justify-content-around">
   <div class="row">
   <div class="col text-center">
+
     <p class="noTextWarning missingWarning"></p>
     <button class="btn rounded-0 delButton encryptor px-5 encryptButton" onclick="recieveMessage();">Encrypt Text</button>
+
   </div>
   </div>
 </div>
 
 <div class="container mt-5">
   <div class="row text-center">
+
   <p id="encryptedActual" class="col text-center">Your encrypted message will appear here.</p>
+
   </div>
 </div>
 
