@@ -23,7 +23,7 @@
 
 <body>
 
-  <h1 id="TITLE" class="text-center font-weig">ENCRYPTOR 3000</h1>
+  <h1 id="TITLE" class="text-center">ENCRYPTOR 3000</h1>
 
 <div class="container text-center">
 
@@ -66,14 +66,14 @@
   <form class="row g-3 justify-content-center" id="myForm" onsubmit="event.preventDefault();">
 
     <div class="col-md-5">
-      <label for="firstName" class="form-label spaceLabel">Message you want to encrypt:</label>
-      <input type="text" class="form-control border-0 rounded-0" autocomplete="off" id="choppingBlock">
+      <label for="choppingBlock" class="form-label spaceLabel">Message you want to encrypt:</label>
+      <input type="text" la class="form-control border-0 rounded-0" autocomplete="off" id="choppingBlock">
     </div>
 
-    <button id="deletor" class="btn fa-solid fa-trash-can align-bottom ml-3 mr-3 d-inline-block mt-4 mb-1 rounded-0 delButton" onclick="clearLabel();"></button>
+    <button id="deletor" aria-label="Delete" class="btn fa-solid fa-trash-can align-bottom ml-3 mr-3 d-inline-block mt-4 mb-1 rounded-0 delButton" onclick="clearLabel();"></button>
 
     <div class="col-md-5 w-100">
-      <label for="lastName" class="form-label spaceLabel">Spaces you want letters to shift:</label>
+      <label for="numero" class="form-label spaceLabel">Spaces you want letters to shift:</label>
       <input type="text" class="form-control border-0 rounded-0" id="numero" type="text" autocomplete="off" name="offsetNumber" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');">
     </div>
 
