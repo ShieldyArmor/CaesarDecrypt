@@ -17,7 +17,7 @@ function recieveMessage() {
   let simplified = assignedVariable.toLowerCase();
   //console.log(simplified);
   if (simplified == "turing" || simplified == "alan turing"){
-    console.log("Nice :)");
+    document.location.href = "turing.html";
   }
 
   //Shifts the alphabet as many times as specified by the user
