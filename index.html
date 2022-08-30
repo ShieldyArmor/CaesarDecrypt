@@ -83,7 +83,6 @@
       <div class="col-md-5">
         <label for="firstName" class="form-label spaceLabel">Message you want to encrypt:</label>
         <input type="text" class="form-control border-0 rounded-0" autocomplete="off" id="choppingBlock">
-        <p class="noTextWarning missingWarning"></p>
       </div>
       <button id="deletor" class="btn fa-solid fa-trash-can align-bottom ml-3 mr-3 d-inline-block mt-4 mb-1 rounded-0 delButton" onclick="clearLabel();"></button>
       <div class="col-md-5 w-100">
@@ -97,7 +96,8 @@
 <div class="container mt-5 justify-content-around">
   <div class="row">
   <div class="col text-center">
-
+    
+    <p class="noTextWarning missingWarning"></p>
     <button class="btn rounded-0 delButton encryptor px-5 encryptButton" onclick="recieveMessage();">Encrypt Text</button>
 
   </div>
