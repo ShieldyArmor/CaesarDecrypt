@@ -1,22 +1,4 @@
-/* silkscreen-regular - latin */
-@font-face {
-  font-family: 'Silkscreen';
-  font-style: normal;
-  font-weight: 400;
-  src: local(''),
-       url('../assets/silkscreen-v1-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../assets/silkscreen-v1-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
 
-/* cutive-mono-regular - latin */
-@font-face {
-  font-family: 'Cutive Mono';
-  font-style: normal;
-  font-weight: 400;
-  src: local(''),
-       url('../assets/cutive-mono-v14-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../assets/cutive-mono-v14-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
 
 html, body {
   height: 100%;
@@ -37,21 +19,21 @@ form {
 }
 
 #encryptedActual{
-  font-family: 'Silkscreen', cursive;
+  font-family: 'Silkscreen', Fallback, cursive;
   color: lightgreen;
 }
 
 #TITLE{
-  font-family: 'Cutive Mono', monospace;
+  font-family: 'Cutive Mono', Fallback, monospace;
 }
 
 #DESCRIPTION{
-  font-family: 'Cutive Mono', monospace;
+  font-family: 'Cutive Mono', Fallback, monospace;
   color: lightgreen;
 }
 
 .spaceLabel{
-  font-family: 'Cutive Mono', monospace;
+  font-family: 'Cutive Mono', Fallback, monospace;
   color: lightgreen;
 }
 
@@ -81,7 +63,7 @@ transition-delay: 0s;
 
 .encryptButton{
   background-color: #4CAF50;
-  font-family: 'Cutive Mono', monospace;
+  font-family: 'Cutive Mono', Fallback, monospace;
 }
 
 .delButton:hover{
@@ -99,10 +81,10 @@ transition-delay: 0s;
 /*Styles for the missing content warnings*/
 .missingWarning {
   font-size: 1.0rem;
-  font-family: 'Cutive Mono', monospace;
+  font-family: 'Cutive Mono', Fallback, monospace;
 }
 
-/*@font-face {
+@font-face {
   font-family: "Silkscreen";
   src: url("../assets/Silkscreen/Silkscreen-Regular.ttf");
   font-weight: 400;
@@ -114,4 +96,4 @@ transition-delay: 0s;
   src: url("../assets/Cutive_Mono/CutiveMono-Regular.ttf");
   font-weight: 400;
   font-style: normal;
-}*/
+}
