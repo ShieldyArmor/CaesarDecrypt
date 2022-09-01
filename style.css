@@ -1,3 +1,23 @@
+/* silkscreen-regular - latin */
+@font-face {
+  font-family: 'Silkscreen';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../assets/silkscreen-v1-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../assets/silkscreen-v1-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* cutive-mono-regular - latin */
+@font-face {
+  font-family: 'Cutive Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../assets/cutive-mono-v14-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../assets/cutive-mono-v14-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
 html, body {
   height: 100%;
   width: 100%;
@@ -82,7 +102,7 @@ transition-delay: 0s;
   font-family: 'Cutive Mono', monospace;
 }
 
-@font-face {
+/*@font-face {
   font-family: "Silkscreen";
   src: url("../assets/Silkscreen/Silkscreen-Regular.ttf");
   font-weight: 400;
@@ -94,4 +114,4 @@ transition-delay: 0s;
   src: url("../assets/Cutive_Mono/CutiveMono-Regular.ttf");
   font-weight: 400;
   font-style: normal;
-}
+}*/
