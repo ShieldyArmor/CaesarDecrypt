@@ -81,3 +81,17 @@ transition-delay: 0s;
   font-size: 1.0rem;
   font-family: 'Cutive Mono', monospace;
 }
+
+@font-face {
+  font-family: "Silkscreen";
+  src: url("/assets/Silkscreen/Silkscreen-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cutive Mono";
+  src: url("/assets/Cutive_Mono/CutiveMono-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
